@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Url shortner</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700" media="all"/>
+    <link rel="stylesheet" href="/st.css?v=1.0"/>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0"/>
+</head>
+<body>
+<div class="page">
+    <div class="page__header">
+        <div class="page__logo">
+            Shogenov
+        </div>
+        <div class="page__task-name">
+            URL shortener
+        </div>
+    </div>
+    <div class="page__image">
+        <div class="page__task-title">
+            URL shortener
+        </div>
+    </div>
+    <div class="page__form">
+        <form action="/api/shorten" onsubmit="makeUrlShort(this);return false;">
+            <div class="form">
+                <div class="form__long-url">
+                    <label for="name">
+                        Long URL
+                    </label>
+                    <input type="url" class="input-text" id="name" name="url" required>
+                    <button type="submit" class="btn">Do!</button>
+                </div>
+                <div class="form__short-url">
+                    <label>
+                        Short URL
+                    </label>
+                    <div class="form__result">
+                        <div id="result"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/cm.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "urlshortener",
+  "version": "1.0.0",
+  "description": "Url shortener on nodeJS",
+  "main": "index.js",
+  "scripts": {},
+  "author": "shaggyrec",
+  "license": "ISC",
+  "dependencies": {}
+}
